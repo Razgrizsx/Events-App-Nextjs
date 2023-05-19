@@ -7,7 +7,7 @@ export default function HomePage({data}){
           {data.events_categories.map(({id, title, description, image}) => {
             return (
               <div className='card'>
-                <Image width={190} height={190} src={image} alt={title} />
+                <Image key={id} width={190} height={190} src={image} alt={title} />
                 <div className='content'>
                 <Link key={id} href={`/events/${id}`}><h1>{title}</h1></Link>
                 <p>{description}</p>

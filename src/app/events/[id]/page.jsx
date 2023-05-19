@@ -12,7 +12,7 @@ export default function Event({params}){
                     if(city.toLowerCase()===id){
                         return (
                         <div className='card'>
-                            <Image width={350} height={300} src={image} alt={title} />
+                            <Image key={id} width={350} height={300} src={image} alt={title} />
                             <Link key={id} href={`/events/${id}/${cityId}`} city= {city}><h1>{title}</h1></Link>
                             <p>{description}</p>
                         </div>
