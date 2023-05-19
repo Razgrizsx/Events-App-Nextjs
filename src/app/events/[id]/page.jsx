@@ -11,7 +11,7 @@ export default function Event({params}){
                 data.allEvents.map(({id: cityId,title, city, description, image}) => {
                     if(city.toLowerCase()===id){
                         return (
-                        <div className='card'>
+                        <div key={id} className='card'>
                             <Image key={id} width={350} height={300} src={image} alt={title} />
                             <Link key={id} href={`/events/${id}/${cityId}`} city= {city}><h1>{title}</h1></Link>
                             <p>{description}</p>

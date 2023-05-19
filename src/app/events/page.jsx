@@ -11,7 +11,7 @@ export default function Events(){
         <div className='event_body'>
           {data.events_categories.map(({id, title, description, image}) => {
             return (
-              <div className='card'>
+              <div key={id} className='card'>
                 <Image key={id} width={300} height={300} src={image} alt={title} />
                 <Link key={id} href={`/events/${id}`}><h2>{title}</h2></Link>    
               </div>
