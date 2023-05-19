@@ -10,7 +10,7 @@ export default function Event({params}){
   
     return (
         <div className='event_single_page'>
-            <Image width={1100} height={500} src={even.image} alt={even.title} ></Image>
+            <Image width={900} height={500} src={even.image} alt={even.title} ></Image>
             <h1>{even.title}</h1>
             <p>{even.description}</p>
             <Form event={event}/>    
