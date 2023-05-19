@@ -1,0 +1,114 @@
+header
+    height: 100px
+    padding: 50px
+    background: linear-gradient(325deg, #B5D9FD, transparent)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .topNav
+        display: flex
+        justify-content: space-between
+        align-content: center
+        ul
+            display: flex
+            text-decoration: none
+            list-style: none
+            gap: 15px
+            li
+                font-weight: 600
+                font-size: 16px
+
+footer
+    background-color: #333
+    color: #fff
+    padding: 10px
+    text-align: center
+
+
+main
+    width: 100%
+    max-width: 1420px
+    margin: auto
+    padding: 30px
+    min-height: 600px
+ 
+.home_body
+    display: flex
+    flex-direction: column
+    gap: 50px
+    .card
+        display: flex
+        flex-direction: row
+        gap: 30px
+        justify-content: center
+        &:nth-child(even)
+            direction: rtl
+        .content
+            width: 50%
+
+.about_us
+    display: flex
+    flex-direction: row
+    text-decoration: none
+    list-style: none
+    
+
+.event_body
+    display: flex
+    flex-direction: row
+    gap: 50px
+    .card
+        position: relative
+        h2
+            position: absolute 
+            top: 50%
+            text-align: center
+            font-size: 38px
+            color: white
+            text-transform: uppercase
+            text-shadow: 1px 1px 20px black
+
+.event
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 30px
+    width: 100%
+    justify-content: center
+    .card
+        display: flex
+        flex-direction: column
+        width: 30%
+
+
+.event_single_page
+    .email_registration
+        margin-top: 25px
+        label
+            display: flex
+            margin-bottom: 15px
+            font-size: 18px
+            font-weight: 800
+            text-transform: uppercase
+            margin-top: 25px
+        input
+            height: 40px
+            min-width: 200px
+            box-shadow: none
+            border-radius: 5px
+            border: 1px solid #ccc
+            font-size: 16px
+        button
+            border-radius: 5px
+            height: 40px
+            min-width: 150px
+            border: 1px solid #5f5a5a
+            font-size: 16px
+            text-transform: uppercase
+            margin-left: 10px
+            font-weight: 600
+            background: #B5D9FD
+            cursor: pointer
+            &:hover
+                background: #333
+                color: #B5D9FD

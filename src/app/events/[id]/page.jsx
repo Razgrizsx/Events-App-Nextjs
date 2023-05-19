@@ -1,18 +1,19 @@
 import Link from 'next/link'
 import data from '../../../../data/data.json'
 import Image from 'next/image'
+import '../../general.sass'
 
 export default function Event({params}){
     const {id} = params
     return (
-        <div>
+        <div className='event'>
             {
                 data.allEvents.map(({id: cityId,title, city, description, image}) => {
                     if(city.toLowerCase()===id){
                         return (
-                        <div>
-                            <Image width={190} height={190} src={image} alt={title} />
-                            <Link href={`/events/${id}/${cityId}`} city= {city}><h1>{title}</h1></Link>
+                        <div className='card'>
+                            <Image width={350} height={300} src={image} alt={title} />
+                            <Link key={id} href={`/events/${id}/${cityId}`} city= {city}><h1>{title}</h1></Link>
                             <p>{description}</p>
                         </div>
                         )

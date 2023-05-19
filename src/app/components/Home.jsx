@@ -1,21 +1,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import s from '@/app/page.module.css'
 
 export default function HomePage({data}){
     return(
-        <main>
-        <div>
+        <div className='home_body'>
           {data.events_categories.map(({id, title, description, image}) => {
             return (
-              <div>
+              <div className='card'>
                 <Image width={190} height={190} src={image} alt={title} />
-                <Link key={id} href={`/events/${id}`}><h2>{title}</h2></Link>
+                <div className='content'>
+                <Link key={id} href={`/events/${id}`}><h1>{title}</h1></Link>
                 <p>{description}</p>
+                </div>
               </div>
             )
           })}
         </div>
-      </main>
     )
 }

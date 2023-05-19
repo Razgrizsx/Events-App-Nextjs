@@ -1,3 +1,8 @@
 body{
-  background-color: rgb(211, 208, 208);
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+h1{
+  text-decoration: none;
 }

@@ -16,16 +16,14 @@ const links = [{
 
 export default function Navigation(){
     return (
-      <header>
         <nav>
             <ul>
                 {links.map(({route, label}) => (
                     <li key={route}>
-                    <Link href={route}>{label}</Link>
+                    <Link key={route} href={route}><p>{label}</p></Link>
                     </li>
                 ))}
             </ul>
         </nav>
-      </header>
     )
 }
