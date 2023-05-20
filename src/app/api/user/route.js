@@ -1,11 +1,11 @@
-//import { NextResponse } from 'next/server'
-import data from '../../../../data/data.json'
+
 import { NextResponse } from 'next/server'
 import path from 'path'
 import fs from 'fs'
 
 function filePath(){
   return path.join(process.cwd(), 'data', 'data.json')
+
 }
 
 function extract(path){
@@ -20,9 +20,10 @@ export async function GET(request) {
   return NextResponse.json(request.url)
 }
 
-export async function POST(request) {
+export async function POST(request, context) {
   
   const filepath = filePath()
+  console.log(filepath)
   const res = await request.json()
   const {events_categories, allEvents} = extract(filepath)
   
@@ -44,8 +45,9 @@ export async function POST(request) {
     return ev
   })
   
+  console.log(__dirname)
   
-  
-  fs.writeFileSync(filepath, JSON.stringify({events_categories, allEvents: newAllEvents}))
+  fs.writeFile('C:\Users\Razgriz\Desktop\NextJs\NextJs\my-nextjs-app\data\test.json', JSON.stringify({events_categories, allEvents: newAllEvents}))
   return NextResponse.json(`You have been registered with the email: ${res.email}`)
 }
+
