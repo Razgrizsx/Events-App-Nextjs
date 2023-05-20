@@ -7,6 +7,7 @@ export default function Event({params}){
     const {id} = params
     return (
         <div className='event'>
+            <h1>hey</h1>
             {
                 data.allEvents.map(({id: cityId,title, city, description, image}) => {
                     if(city.toLowerCase()===id){
