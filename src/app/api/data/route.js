@@ -1,4 +1,4 @@
-import data from '../data/tmp/data.json'
+import data from '../../data/tmp/data.json'
 import { NextResponse } from 'next/server'
 
 
