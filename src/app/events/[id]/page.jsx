@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import data from '../../../../data/data.json'
+import data from '../../data/tmp/data.json'
 import Image from 'next/image'
 import '../../general.sass'
 
