@@ -1,34 +1,63 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Visit the deployed site in https://spartanevents.vercel.app/
 
-First, run the development server:
+This is an Event application developed with Nextjs. The latin text is a placeholder, a real event organization would replace this with their information. It consists of four main views:
 
-```bash
+1. Landing Page
+
+Logo and event places information.
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/239766855-f84b8608-cb3c-45ac-b313-cfcbb3a11474.PNG" />
+</p>
+
+2. Events Page
+
+A showcase of the events happening in a specific city.
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/239766858-dd962e96-d737-4680-b052-c9db55c177f0.PNG" />
+</p>
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498192-abeb6843-eb3f-4fea-a763-c10aebc0c5b0.PNG" />
+</p>
+
+3. Event Page
+
+Detailed information about the selected event.
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/239766853-fba56c3f-e1f3-47dc-a268-671eb35f77a7.PNG" />
+</p>
+
+4. About Page
+
+This can be used to contact the owner of the page.
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/239766851-8362d58e-1db1-4b79-b5cd-772f3537d69b.PNG" />
+</p>
+
+Local Set Up
+
+You'll need to have a modern Browser, Git and NodeJS installed in your machine for this app to work locally. When you meet those requirements proceed with the steps bellow.
+
+    Clone this repo to your local machine.
+
+git clone https://github.com/Razgrizsx/Events-App-Nextjs.git
+
+    On a terminal window of your preference navigate to the path where you cloned the repo.
+
+    Open a terminal on the Events-App-Nextjs folder.
+
+    Run the command "npm install" to set up the project dependicies.
+
+npm install
+
+    On the terminal prompt run the command
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The app will launch on your default browser.
