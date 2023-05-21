@@ -20,10 +20,6 @@ A showcase of the events happening in a specific city.
   <img height="300" src="https://user-images.githubusercontent.com/104910559/239766858-dd962e96-d737-4680-b052-c9db55c177f0.PNG" />
 </p>
 
-<p align="center">
-  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498192-abeb6843-eb3f-4fea-a763-c10aebc0c5b0.PNG" />
-</p>
-
 3. Event Page
 
 Detailed information about the selected event.
